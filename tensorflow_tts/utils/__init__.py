@@ -8,7 +8,7 @@ from tensorflow_tts.utils.cleaners import (
     lowercase,
     transliteration_cleaners,
 )
-from tensorflow_tts.utils.decoder import dynamic_decode
+# from tensorflow_tts.utils.decoder import dynamic_decode
 from tensorflow_tts.utils.griffin_lim import TFGriffinLim, griffin_lim_lb
 from tensorflow_tts.utils.group_conv import GroupConv1D
 from tensorflow_tts.utils.number_norm import normalize_numbers

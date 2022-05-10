@@ -22,26 +22,26 @@ import copy
 from collections import OrderedDict
 
 from tensorflow_tts.configs import (
-    FastSpeechConfig,
+    # FastSpeechConfig,
     FastSpeech2Config,
-    MelGANGeneratorConfig,
-    MultiBandMelGANGeneratorConfig,
-    HifiGANGeneratorConfig,
-    Tacotron2Config,
-    ParallelWaveGANGeneratorConfig,
+    # MelGANGeneratorConfig,
+    # MultiBandMelGANGeneratorConfig,
+    # HifiGANGeneratorConfig,
+    # Tacotron2Config,
+    # ParallelWaveGANGeneratorConfig,
 )
 
-from tensorflow_tts.models import (
-    TFMelGANGenerator,
-    TFMBMelGANGenerator,
-    TFHifiGANGenerator,
-    TFParallelWaveGANGenerator,
-)
+# from tensorflow_tts.models import (
+#     TFMelGANGenerator,
+#     TFMBMelGANGenerator,
+#     TFHifiGANGenerator,
+#     TFParallelWaveGANGenerator,
+# )
 
 from tensorflow_tts.inference.savable_models import (
-    SavableTFFastSpeech,
+    # SavableTFFastSpeech,
     SavableTFFastSpeech2,
-    SavableTFTacotron2
+    # SavableTFTacotron2
 )
 from tensorflow_tts.utils import CACHE_DIRECTORY, MODEL_FILE_NAME, LIBRARY_NAME
 from tensorflow_tts import __version__ as VERSION
@@ -51,12 +51,12 @@ from huggingface_hub import hf_hub_url, cached_download
 TF_MODEL_MAPPING = OrderedDict(
     [
         (FastSpeech2Config, SavableTFFastSpeech2),
-        (FastSpeechConfig, SavableTFFastSpeech),
-        (MultiBandMelGANGeneratorConfig, TFMBMelGANGenerator),
-        (MelGANGeneratorConfig, TFMelGANGenerator),
-        (Tacotron2Config, SavableTFTacotron2),
-        (HifiGANGeneratorConfig, TFHifiGANGenerator),
-        (ParallelWaveGANGeneratorConfig, TFParallelWaveGANGenerator),
+        # (FastSpeechConfig, SavableTFFastSpeech),
+        # (MultiBandMelGANGeneratorConfig, TFMBMelGANGenerator),
+        # (MelGANGeneratorConfig, TFMelGANGenerator),
+        # (Tacotron2Config, SavableTFTacotron2),
+        # (HifiGANGeneratorConfig, TFHifiGANGenerator),
+        # (ParallelWaveGANGeneratorConfig, TFParallelWaveGANGenerator),
     ]
 )
 
